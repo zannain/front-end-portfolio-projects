@@ -1,7 +1,12 @@
 
-export default function Button() {
+import PropTypes, { InferProps } from "prop-types";
+
+export default function Button({buttonText}: InferProps<typeof Button.propTypes>)  {
   return (
-      <button>Free Consultation</button>
+      <button>{buttonText}</button>
   )
 }
 
+Button.propTypes = {
+  buttonText: PropTypes.string.isRequired
+};

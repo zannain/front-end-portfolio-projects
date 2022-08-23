@@ -85,3 +85,53 @@ body {
 .spacing {
     margin-top: var(--spacing);
 }
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    height: 225px;
+    background: white;
+    border-radius: 8px;
+    padding: var(--spacing);
+    margin: var(--spacing);
+    display: flex;
+    align-items: end;
+    color: var(--light-cream);
+}
+.galactic-blue {
+    background-color: var(--galactic-blue);
+}
+
+.summer-yellow {
+    background-color: var(--summer-yellow);
+}
+.pink {
+    background-color: var(--pink);
+}
+.light-red {
+    background-color: var(--light-red);
+}
+.cyan {
+    background-color: var(--cyan);
+}
+.dark-purple {
+    background-color: var(--dark-purple);
+}
+.medium-brown {
+    background-color: var(--medium-brown);
+}
+.light-cream {
+    background-color: var(--light-cream);
+}
+
+.card svg {
+    position: absolute;
+    top: 5%;
+    right: 10px;
+
+}
