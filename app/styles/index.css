@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src:
+      url('/fonts/jakarta-sans-500.woff2') format('woff2-variations'),
+      url('/fonts/jakarta-sans-700.woff2') format('woff2-variations');
+    font-weight: 500 700;
+    font-display: swap;
+}
+/*  COLORS */
+:root {
+    --galactic-blue: hsl(252,66%,62%);
+    --summer-yellow: hsl(28,89%,67%);
+    --pink: hsl(0,78%,79%);
+    --light-red: hsl(7,77%,66%);
+    --cyan: hsl(172,46%,57%);
+    --dark-purple: hsl(314,45%, 23%);
+    --medium-brown: hsl(30,5%,45%);
+    --light-cream: hsl(28,100%,97%);
+    --black: hsl(0, 0%, 1%);
+    --font-xs: 18px;
+    --font-sm: 32px;
+    --font-md: 40px;
+    --font-lg: 56px;
+    --fw-500: 500;
+    --fw-700: 700;
+    --spacing: 16px;
+    --line-height-xs: calc(28px / 1rem);
+    --line-height-sm: calc(40px / 1rem);
+    --line-height-md: calc(51px / 1rem);
+    --line-height-lg: calc(70px / 1rem);
+
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: var(--fw-500);
+    background-color: var(--light-cream);
+}
+
+.heading-lg {
+    font-size: var(--font-lg);
+    font-weight: var(--fw-700);
+    line-height: var(--line-height-lg);
+}
+
+.heading-md {
+    font-size: var(--font-md);
+    font-weight: var(--fw-700);
+    line-height: var(--line-height-md);
+}
+
+.heading-sm {
+    font-size: var(--font-sm);
+    font-weight: var(--fw-700);
+    line-height: var(--line-height-sm);
+}
+
+.text-xs {
+    font-size: var(--font-xs);
+    font-weight: var(--fw-500);
+    line-height: var(--line-height-xs);
+    color: var(--medium-brown);
+}
+
+.container {
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing h3 {
+    text-align: center;
+}
+.landing p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+.spacing {
+    margin-top: var(--spacing);
+}
