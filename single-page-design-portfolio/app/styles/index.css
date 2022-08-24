@@ -16,17 +16,17 @@
     --medium-brown: hsl(30,5%,45%);
     --light-cream: hsl(28,100%,97%);
     --black: hsl(0, 0%, 1%);
-    --font-xs: 18px;
+    --font-base: 16px;
     --font-sm: 32px;
     --font-md: 40px;
     --font-lg: 56px;
     --fw-500: 500;
     --fw-700: 700;
     --spacing: 16px;
-    --line-height-xs: calc(28px / 1rem);
-    --line-height-sm: calc(40px / 1rem);
-    --line-height-md: calc(51px / 1rem);
-    --line-height-lg: calc(70px / 1rem);
+    --line-height-xs: calc(28px / var(--font-base) * 1rem);
+    --line-height-sm: calc(40px / var(--font-base) * 1rem);
+    --line-height-md: calc(51px / var(--font-base) * 1rem);
+    --line-height-lg: calc(70px / var(--font-base) * 1rem);
 
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .text-xs {
-    font-size: var(--font-xs);
+    font-size: var(--font-base);
     font-weight: var(--fw-500);
     line-height: var(--line-height-xs);
     color: var(--medium-brown);

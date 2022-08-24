@@ -20,9 +20,11 @@ const CardWrapper = styled.div`
   height: 100%;
   justify-content: center;
 `;
-const Card = styled.div`
+export const Card = styled.div`
+  overflow: hidden;
   position: relative;
   height: 225px;
+  border-radius: 25px;
   padding: var(--spacing);
   margin: var(--spacing);
   display: flex;

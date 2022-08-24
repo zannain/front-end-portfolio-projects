@@ -2,7 +2,8 @@ import styled from "styled-components";
 import PropTypes, { InferProps } from 'prop-types';
 const BaseButton = styled.button`
   & {
-    width: 180px;
+    max-width: 228px;
+    min-width: 180px;
     height: 50px;
     border: none;
     text-align: center;
