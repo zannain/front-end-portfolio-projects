@@ -2,7 +2,7 @@ import * as React from "react";
 import { SVGProps } from "react";
 
 const SvgPatternGraphicDesign = (props: SVGProps<SVGSVGElement>) => (
-  <svg width={128} height={192} xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg width={50} height={64} xmlns="http://www.w3.org/2000/svg" {...props}>
     <g fill="none" fillRule="evenodd">
       <path fill="#552049" d="M0 0h64v128H0z" />
       <circle stroke="#FFF7F0" strokeWidth={4} cx={32} cy={32} r={14} />
