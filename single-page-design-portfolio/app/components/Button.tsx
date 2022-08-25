@@ -1,7 +1,39 @@
 import styled from 'styled-components/macro';
 import PropTypes, { InferProps } from 'prop-types';
-const BaseButton = styled.button`
-  & {
+import {SIZES} from "~/utilities/constants";
+
+type ButtonPropTypes = {
+  variant: string;
+  size: string;
+  children: any
+}
+const Button = ({ variant, size, children }: ButtonPropTypes) => {
+  const styles = SIZES[size];
+
+  let Component;
+
+  switch (variant) {
+    case "primary":
+      Component = PrimaryButton;
+      break;
+    case "secondary":
+      Component = SecondaryButton;
+      break;
+    case "black":
+      Component = BlackButton;
+      break;
+    case "danger":
+      Component = DangerButton;
+      break;
+    default:
+      throw new Error(`Unrecognized Button variant: ${variant}`);
+  }
+  return <Component style={styles}>{children}</Component>;
+
+}
+
+export default Button
+const ButtonBase = styled.button`
     max-width: 228px;
     min-width: 180px;
     height: 50px;
@@ -13,36 +45,20 @@ const BaseButton = styled.button`
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 40px;
-    font-weight: var(--fw-500);
-  }
+
 `;
 
-const Primary = styled(BaseButton)`
-  & {
+const PrimaryButton = styled(ButtonBase)`
     background-color: var(--galactic-blue);
-  }
 `;
-const Secondary = styled(BaseButton)`
-  & {
+const SecondaryButton = styled(ButtonBase)`
     background-color: var(--summer-yellow);
-  }
 `;
-const Black = styled(BaseButton)`
-  & {
+const BlackButton = styled(ButtonBase)`
     background-color: var(--black);
-  }
 `;
-const Danger = styled(BaseButton)`
-  & {
+const DangerButton = styled(ButtonBase)`
     background-color: var(--light-red);
-  }
 `;
-function PrimaryButton({ buttonText }: InferProps<typeof PrimaryButton.propTypes>) { return <Primary>{buttonText}</Primary>; };
-const SecondaryButton = ({ buttonText }: InferProps<typeof PrimaryButton.propTypes>) => <Secondary>{buttonText}</Secondary>;
-const BlackButton = ({ buttonText }: InferProps<typeof PrimaryButton.propTypes>) => <Black>{buttonText}</Black>;
-const DangerButton = ({ buttonText }: InferProps<typeof PrimaryButton.propTypes>) => <Danger>{buttonText}</Danger>;
 
-PrimaryButton.propTypes = {
-  buttonText: PropTypes.string
-}
-export { PrimaryButton, SecondaryButton, BlackButton, DangerButton };
+

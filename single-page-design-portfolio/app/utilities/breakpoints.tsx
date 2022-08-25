@@ -9,3 +9,4 @@ export const QUERIES = {
     'laptopAndUp': `(min-width: ${BREAKPOINTS.laptopMin}px)`,
     'desktopAndUp': `(min-width: ${BREAKPOINTS.desktopMin}px)`
 }
+
