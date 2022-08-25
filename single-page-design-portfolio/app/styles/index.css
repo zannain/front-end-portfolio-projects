@@ -94,8 +94,6 @@ body {
     background-color: var(--light-cream);
 }
 
-.card svg {
-    position: absolute;
-    top: 0;
-    right: 0;
+.col {
+    display: flex;
 }

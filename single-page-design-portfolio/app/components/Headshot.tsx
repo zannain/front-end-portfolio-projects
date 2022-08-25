@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components/macro';
 import amy from "~/images/image-amy.webp";
 import { DangerButton } from "./Button";
 const HeadshotWrapper = styled.div`

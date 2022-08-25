@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 type SpacerProps = {
     axis: string;
     size: number

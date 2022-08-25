@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import {BlackButton} from './Button';
-import { Logo } from './icons';
+import logo  from '~/images/logo.svg';
 
 const Container = styled.div`
   margin: 16px;
@@ -13,7 +13,7 @@ function TopMenu() {
   return (
     <Container>
     <div className="logo-wrapper">
-      <Logo />
+      <img src={logo} />
     </div>
     <div className="button-wrapper">
       <BlackButton buttonText="Free Consultation"></BlackButton>

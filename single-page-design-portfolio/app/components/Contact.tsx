@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components/macro';
 import { DangerButton } from "./Button";
 import { Card } from "./Cards";
+import Spacer from "~/components/Spacer";
 
 const ContactStyles = styled(Card)`
   & {
@@ -9,9 +10,9 @@ const ContactStyles = styled(Card)`
     flex-direction: column;
     gap: var(--spacing);
     align-items: center;
-    min-height: fit-content;
     min-width: 350px;
-    height: 30%;
+    max-height: 350px;
+    height: fit-content;
   }
   p {
     margin-right: auto;
@@ -29,6 +30,8 @@ function Contact() {
         can move forward from there.
       </p>
       <DangerButton buttonText="Free Consultation"></DangerButton>
+      <Spacer axis="horizontal" size={16} />
+
     </ContactStyles>
   );
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components/macro';
 import Cards from "./Cards";
 const BannerStyles = styled.div`
   display: flex;

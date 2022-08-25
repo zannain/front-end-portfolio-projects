@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components/macro';
 import PropTypes, { InferProps } from 'prop-types';
 const BaseButton = styled.button`
   & {
