@@ -1,6 +1,6 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import amy from "~/images/image-amy.webp";
-import { DangerButton } from "./Button";
+import Button  from "./Button";
 const HeadshotWrapper = styled.div`
   width: 350px;
   margin-top: 16px;
@@ -48,7 +48,7 @@ function Headshot() {
       designed everything from brand illustrations to complete mobile apps.
       I’m also handy with a camera!
     </p>
-    <DangerButton buttonText="Free Consultation"></DangerButton>
+    <Button variant="danger" size="md">Free Consultation</Button>
   </HeadshotWrapper>
   )
 }

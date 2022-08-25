@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import slide1 from "~/images/image-slide-1.jpg";
 import slide2 from "~/images/image-slide-2.jpg";
 import slide3 from "~/images/image-slide-3.jpg";

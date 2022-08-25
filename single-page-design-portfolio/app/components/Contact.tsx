@@ -1,5 +1,5 @@
-import styled from 'styled-components/macro';
-import { DangerButton } from "./Button";
+import styled from 'styled-components';
+import  Button  from "./Button";
 import { Card } from "./Cards";
 import Spacer from "~/components/Spacer";
 
@@ -29,7 +29,7 @@ function Contact() {
         is for us to discuss your project during a free consultation. Then we
         can move forward from there.
       </p>
-      <DangerButton buttonText="Free Consultation"></DangerButton>
+      <Button variant="danger" size="md">Free Consultation</Button>
       <Spacer axis="horizontal" size={16} />
 
     </ContactStyles>

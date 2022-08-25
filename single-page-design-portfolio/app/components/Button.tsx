@@ -1,5 +1,4 @@
-import styled from 'styled-components/macro';
-import PropTypes, { InferProps } from 'prop-types';
+import styled from 'styled-components';
 import {SIZES} from "~/utilities/constants";
 
 type ButtonPropTypes = {

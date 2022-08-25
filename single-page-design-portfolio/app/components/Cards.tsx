@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import graphic from "~/images/pattern-graphic-design.svg";
 import illustrations from "~/images/pattern-illustrations.svg";
 import motion from "~/images/pattern-motion-graphics.svg";

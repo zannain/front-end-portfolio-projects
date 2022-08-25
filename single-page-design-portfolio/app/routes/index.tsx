@@ -7,7 +7,7 @@ import Spacer from "~/components/Spacer";
 import ImageList from "~/components/ImageList";
 import Contact from "~/components/Contact";
 import Banner from "~/components/Banner";
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import {QUERIES} from "~/utilities/breakpoints"
 export const links: LinksFunction = () => {
   return [
